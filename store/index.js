@@ -24,7 +24,6 @@ export const actions = {
     commit('SET_USER_DATA', userData)
   },
   async logout({ commit }) {
-    console.log('Test')
     await magic.user.logout()
     commit('CLEAR_USER_DATA')
   },
